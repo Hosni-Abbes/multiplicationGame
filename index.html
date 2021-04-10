@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Multiplication game</title>
+	</head>
+  <body>
+    <div class="overlay">
+      <input class="name-field" type="text" placeholder="Your Name">
+      <button class="play-btn">Play</button>
+    </div>
+    <div class="main">
+      <div class="welcome">Welcome <span class='name'></span> !</div>
+      <div class="top">
+        <span class="timer">Left : <span class="time"></span>s</span>
+        <span class="corect">Correct: <span class="corectSc"></span>/10</span>
+      </div>
+      <div class="game-container">
+        <div class="question">
+          <span class="qst"></span>
+        </div>
+        <div class="reponse">
+          <span class="eq-one" onclick="nextQst(event)"></span>
+          <span class="eq-two" onclick="nextQst(event)"></span>
+          <span class="eq-thr" onclick="nextQst(event)"></span>
+          <span class="eq-frr" onclick="nextQst(event)"></span>
+        </div>
+      </div>
+      <div class="result">
+        <span class="res-msg"></span>
+        <span class="res-cont">Result: <span class="res"></span>/10</span>
+        <div class="good-bad">
+          <span class="good">0</span>
+          <span class="bad">0</span>
+        </div>
+        <button class="play-again">Play Again</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+	</body>
+</html>
